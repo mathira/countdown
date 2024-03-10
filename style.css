@@ -16,11 +16,12 @@ body {
 }
 
 .countdown-container {
+    text-align: center;
     z-index: 1000;
     text-align: center;
     background-color: rgba(255, 192, 203, 0.75);
     border-radius: 15px;
-    padding: 20px;
+    padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 2s;
 }
@@ -55,11 +56,9 @@ img {
 .mnm {
     position: absolute;
     color: #fff;
-    /* Color del texto */
     font-size: 2em;
     animation: moveUpDown 10s infinite;
     animation-duration: calc(10s + var(--i) * 2s);
-    /* Duración variable */
 }
 
 @keyframes moveUpDown {
