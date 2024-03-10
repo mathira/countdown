@@ -1,0 +1,133 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-color: #FADADD;
+    background-size: cover;
+    color: #FFFFFF;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown-container {
+    z-index: 1000;
+    text-align: center;
+    background-color: rgba(255, 192, 203, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.time {
+    z-index: 1000;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    z-index: 1000;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.mnm {
+    position: absolute;
+    color: #fff;
+    /* Color del texto */
+    font-size: 2em;
+    animation: moveUpDown 10s infinite;
+    animation-duration: calc(10s + var(--i) * 2s);
+    /* Duración variable */
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(-20%) translateX(0%);
+    }
+
+    25% {
+        transform: translateY(20vh) translateX(50vw);
+    }
+
+    50% {
+        transform: translateY(40vh) translateX(-50vw);
+    }
+
+    75% {
+        transform: translateY(60vh) translateX(50vw);
+    }
+}
+
+.mnm:nth-child(1) {
+    left: 10vw;
+    animation-delay: 0s;
+}
+
+.mnm:nth-child(2) {
+    left: 30vw;
+    animation-delay: -5s;
+}
+
+.mnm:nth-child(3) {
+    left: 50vw;
+    animation-delay: -10s;
+}
+
+.mnm:nth-child(4) {
+    left: 20vw;
+    animation-delay: -15s;
+}
+
+.mnm:nth-child(5) {
+    left: 60vw;
+    animation-delay: -20s;
+}
+
+.mnm:nth-child(6) {
+    left: 70vw;
+    animation-delay: -25s;
+}
+
+.mnm:nth-child(7) {
+    left: 80vw;
+    animation-delay: -30s;
+}
+
+.mnm:nth-child(8) {
+    left: 90vw;
+    animation-delay: -35s;
+}
+
+.mnm:nth-child(9) {
+    left: 100vw;
+    animation-delay: -40s;
+}
+
+.mnm:nth-child(10) {
+    left: 1vw;
+    animation-delay: -45s;
+}
